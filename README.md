@@ -1,21 +1,22 @@
 # Implementasi Pohon Keputusan dan Metode Quine-McCluskey dalam Deteksi Gejala ADHD pada Anak Usia Dini
 
-Repository ini berisi implementasi algoritma Quine-McCluskey yang dikombinasikan dengan pohon keputusan untuk mendeteksi gejala ADHD pada anak usia dini. Proyek ini bertujuan untuk menyederhanakan fungsi logika berdasarkan tabel kebenaran dari diagnosis non-ADHD.
+Selamat datang di repository ADHD Checker, sebuah aplikasi yang dirancang untuk mendeteksi gejala ADHD (Attention Deficit Hyperactivity Disorder) pada anak usia dini. Aplikasi ini memanfaatkan algoritma Pohon Keputusan dan metode Quine-McCluskey untuk menganalisis data gejala.
 
 Struktur Repository
 ```
 .
-├── main.py                          # Algoritma Quine-McCluskey
+├── main.py                          # ADHD Checker
 ├── docs        
 │   └── truth-table-non-adhd.pdf     # Tabel kebenaran diagnosis non-ADHD
 ├── test            
-│   └── testfile.txt                 # Minterm hasil tabel kebenaran
+│   ├── testfile.txt                 # Minterm hasil tabel kebenaran
+│   └── quine-mccluskey.py           # Algoritma Quine-McCluskey
 └── README.md     
 ```
 
 # File main.py
 
-File ini berisi implementasi utama algoritma Quine-McCluskey. Algoritma ini digunakan untuk menyederhanakan fungsi logika berdasarkan minterm yang dihasilkan dari tabel kebenaran diagnosis.
+File ini berisi aplikasi utama ADHD Checker. Aplikasi ini bertujuan untuk mendeteksi Gejala ADHD berdasarkan masukan pengguna.
 
 # Folder docs
 
@@ -24,8 +25,9 @@ Folder ini berisi dokumentasi terkait proyek, termasuk tabel kebenaran diagnosis
 
 # Folder test
 
-Folder ini berisi file untuk pengujian algoritma:
+Folder ini berisi file untuk pengujian algoritma Quine-McCluskey:
 1. testfile.txt: File ini berisi daftar minterm yang dihasilkan dari tabel kebenaran diagnosis. File ini digunakan sebagai input untuk algoritma Quine-McCluskey.
+2. quine-mccluskey.py: File ini berisi algoritma penyederhanaan aljabar Boolean dengan metode Quine-McCluskey. Algoritma ini digunakan untuk menyederhanakan fungsi logika berdasarkan minterm yang dihasilkan dari tabel kebenaran diagnosis.
 
 # Cara Penggunaan
 
@@ -40,7 +42,7 @@ python3 --version
 ```
 
 2. Clone repository ini ke komputer Anda.
-```
+``` 
 git clone https://github.com/adndax/discrete-math.git
 ```
 
